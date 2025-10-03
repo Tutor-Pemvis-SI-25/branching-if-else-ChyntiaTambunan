@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tutor"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-03 02:25:54 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtQjJUOFMzM1Y7MjAyNS0xMC0wMzsxMTo0Mzo0OSBBTTsyNjE2"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQjJUOFMzM1Y7MjAyNS0xMC0wMzswMjoyNTo1NCBQTTsyOzI3MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jumlah, kali" type="Integer" array="False" size=""/>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <declare name="m, n" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a mod 2=0">
+                <then>
+                    <assign variable="m" expression="&quot;genap&quot;"/>
+                </then>
+                <else>
+                    <assign variable="m" expression="&quot;ganjil&quot;"/>
+                </else>
+            </if>
+            <if expression="b mod 2=0">
+                <then>
+                    <assign variable="n" expression="&quot;genap&quot;"/>
+                </then>
+                <else>
+                    <assign variable="n" expression="&quot;ganjil&quot;"/>
+                </else>
+            </if>
+            <output expression="&quot;bilangan pertama: &quot; &amp;a" newline="True"/>
+            <output expression="&quot;bilangan kedua: &quot;&amp; b" newline="True"/>
+            <if expression="a &gt; b">
+                <then>
+                    <output expression="&quot;bilangan pertama lebih besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a = b">
+                        <then>
+                            <output expression="&quot;kedua bilangan sama besar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;bilangan kedua lebih besar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="m=&quot;genap&quot; &amp;&amp; n=&quot;genap&quot;">
+                <then>
+                    <assign variable="jumlah" expression="m+n"/>
+                    <output expression="&quot;hasil penjumlahan: &quot;&amp; jumlah" newline="True"/>
+                </then>
+                <else>
+                    <if expression="m=&quot;ganjil&quot; &amp;&amp; n=&quot;ganjil&quot;">
+                        <then>
+                            <assign variable="kali" expression="a*b"/>
+                            <output expression="&quot;hasil perkalian: &quot; &amp;kali" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
