@@ -1,46 +1,42 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int jumlah, kali;
-        double a, b;
-        String m, n;
+        int x, y, hp, hpk;
 
-        a = Double.parseDouble(input.nextLine());
-        b = Double.parseDouble(input.nextLine());
-        if (a % 2 == 0) {
-            m = "genap";
+        x = Integer.parseInt(input.nextLine());
+        y = Integer.parseInt(input.nextLine());
+        if (x % 2 == 0) {
+            System.out.println("Bilangan pertama: Genap");
         } else {
-            m = "ganjil";
+            System.out.println("Bilangan pertama: Ganjil");
         }
-        if (b % 2 == 0) {
-            n = "genap";
+        if (y % 2 == 0) {
+            System.out.println("Bilangan kedua: Genap");
         } else {
-            n = "ganjil";
+            System.out.println("Bilangan kedua: Ganjil");
         }
-        System.out.println("bilangan pertama: " + a);
-        System.out.println("bilangan kedua: " + b);
-        if (a > b) {
-            System.out.println("bilangan pertama lebih besar");
+        if (x > y) {
+            System.out.println("Bilangan pertama lebih besar");
         } else {
-            if (a == b) {
-                System.out.println("kedua bilangan sama besar");
+            if (y > x) {
+                System.out.println("Bilangan kedua lebih besar");
             } else {
-                System.out.println("bilangan kedua lebih besar");
+                System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (m.equals("genap") && n.equals("genap")) {
-            jumlah = m + n;
-            System.out.println("hasil penjumlahan: " + jumlah);
+        if (x % 2 != 0 && y % 2 == 0) {
+            hp = x + y;
+            System.out.println("Hasil penjumlahan: " + hp);
         } else {
-            if (m.equals("ganjil") && n.equals("ganjil")) {
-                kali = a * b;
-                System.out.println("hasil perkalian: " + kali);
+            if (x % 2 != 0 && y % 2 != 0) {
+                hpk = x * y;
+                System.out.println("Hasil perkalian: " + hpk);
             } else {
-                System.out.println("berbeda jenis");
+                System.out.println("Berbeda jenis");
             }
         }
     }
