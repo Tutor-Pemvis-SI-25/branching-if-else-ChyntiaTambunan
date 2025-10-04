@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-04 01:15:21 PM"/>
+        <attribute name="saved" value="2025-10-04 01:31:29 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtQjJUOFMzM1Y7MjAyNS0xMC0wNDswMTowNDoxOCBQTTsyNjI0"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQjJUOFMzM1Y7MjAyNS0xMC0wNDswMToxNToyMSBQTTsxOzI3Mjg="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQjJUOFMzM1Y7MjAyNS0xMC0wNDswMTozMToyOSBQTTsyOzI3MzU="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,7 +14,7 @@
             <declare name="x, y, hp, hpk" type="Integer" array="False" size=""/>
             <input variable="x"/>
             <input variable="y"/>
-            <if expression="x MOD 2 = 0">
+            <if expression="x MOD 2=0">
                 <then>
                     <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
@@ -22,7 +22,7 @@
                     <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="y Mod 2 = 0">
+            <if expression="y Mod 2=0">
                 <then>
                     <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
@@ -45,13 +45,13 @@
                     </if>
                 </else>
             </if>
-            <if expression="(x MOD 2 != 0)&amp;&amp;(y MOD 2 = 0)">
+            <if expression="(x MOD 2!=0)&amp;&amp;(y MOD 2=0)">
                 <then>
-                    <assign variable="hp" expression="x + y"/>
+                    <assign variable="hp" expression="x+y"/>
                     <output expression="&quot;Hasil penjumlahan: &quot; &amp; hp" newline="True"/>
                 </then>
                 <else>
-                    <if expression="(x MOD 2 != 0)&amp;&amp;(y MOD 2 != 0)">
+                    <if expression="(x MOD 2!=0)&amp;&amp;(y MOD 2!=0)">
                         <then>
                             <assign variable="hpk" expression="x*y"/>
                             <output expression="&quot;Hasil perkalian: &quot; &amp; hpk" newline="True"/>
