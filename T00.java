@@ -1,7 +1,9 @@
+//12S25002-Rivaldo Siagian
+//12S25015-Chyntia Lovenia Tambunan
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class T00 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -28,7 +30,7 @@ public class JavaApplication {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (x % 2 != 0 && y % 2 == 0) {
+        if (x % 2 == 0 && y % 2 == 0) {
             hp = x + y;
             System.out.println("Hasil penjumlahan: " + hp);
         } else {
